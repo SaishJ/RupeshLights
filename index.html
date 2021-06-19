@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META CHARSET -->
     <meta charset="UTF-8" />
+    <!-- META EDGE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- META VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META DESCRIPTION -->
     <meta
       name="description"
       content="Everything Lights for Events, Stage Show, Drama, D.J.’s & Music Arrange"
     />
-    <meta property="og:title" content="Rupesh Lights" />
+    <!-- META KEYWORDS -->
+    <meta name="keywords" content="Rupesh Lights & Truss, Rupesh Lights, Lights, Events, Truss, Lights and Events">
+    <!-- META AUTHOR -->
+    <meta name="author" content="Saish Jagtap">
+    <!-- TITLE -->
+    <title>Rupesh Lights & Truss</title>
+    <!-- META OG TAGS -->
+    <meta property="og:image" content="https://rupeshlights.netlify.app/img/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:title" content="Rupesh Lights & Truss" />
     <meta
       property="og:description"
       content="Everything Lights for Events, Stage Show, Drama, D.J.’s & Music Arrange"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://rueshlights.netlify.app" />
-    <!-- Bootstrap CSS -->
+    <!-- STYLESHEET -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -34,10 +47,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" >
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Rupesh Lights & Truss</title>
+    
   </head>
   <body class="body" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navbar -->
@@ -73,20 +90,22 @@
         </ul>
       </div>
     </nav>
-
+    
+    <!-- HOME/HEADER -->
     <section class="block block--dark block--skewed-left hero" id="home">
       <div class="container grid grid--1x2">
         <header class="block__header hero_content">
-          <h1  class="block__heading">Rupesh Lights & Truss</h1>
+          <h1 data-aos="zoom-in-up" class="block__heading">Rupesh Lights & Truss</h1>
           <p class="hero__tagline">
             Everything Lights for Events, Stage Show, Drama, D.J.’s & Music
             Arrange
           </p>
         </header>
-        <img  class="hero__image" src="img/logo.png" alt="" />
+        <img data-aos="zoom-in" class="hero__image" src="img/logo.png" alt="" />
       </div>
     </section>
 
+    <!-- ABOUT/CARDS -->
     <div class="about" id="about">
       <h1 class="card_text"><b>About Us</b></h1>
       <ul class="cards">
@@ -123,10 +142,10 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/extra.jpeg" />
+              <img src="img/goa1.jpeg" />
             </div>
             <div class="card_content">
-              <h2 class="card_title">Mumbai</h2>
+              <h2 class="card_title">Goa</h2>
             </div>
           </div>
         </li>
@@ -293,6 +312,7 @@
       </ul>
     </div>
 
+    <!-- CONTACT -->
     <section class="contact" id="contact">
       <div  class="content">
         <h2><b>Contact</b></h2>
@@ -345,6 +365,7 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <div class="footer_name">
       <img class="footer_img" src="img/logo.png" /> <i><b>Rupesh Lights</b></i></a
@@ -359,11 +380,11 @@
       </div>
         <p class="copyrights">&copy; 2021 Rupesh Lights</p>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script> -->
+    <!-- jQuery, Popper.js, Bootstrap JS. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- NPROGRESS BAR -->
     <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
     <script>
       NProgress.start();
@@ -375,5 +396,10 @@
       NProgress.configure({ parent: ".body" });
       NProgress.done()
     </script>
+    <!-- ANIMATION -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>    
   </body>
 </html>
