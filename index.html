@@ -19,7 +19,7 @@
     <!-- TITLE -->
     <title>Rupesh Lights & Truss</title>
     <!-- META OG TAGS -->
-    <meta property="og:image" content="https://rupeshlights.netlify.app/img/logo.png" />
+    <meta property="og:image" content="https://rupeshlights.netlify.app/res/img/logo.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:title" content="Rupesh Lights & Truss" />
     <meta
@@ -31,13 +31,16 @@
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="HYSsYH53vWQkWn3MxEOsJ_uvX7RwQXJCncM9zbhuyP4" />
     <!-- STYLESHEET -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
+    <link 
+      rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+    <link 
+      rel="stylesheet" 
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
@@ -51,10 +54,10 @@
     <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="res/img/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css" />
     
   </head>
@@ -62,15 +65,20 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
       <a class="navbar-brand mr-auto" href="#"
-        ><img src="img/logo.png" /> <i><b>Rupesh Lights</b></i></a
+        ><img src="res/img/logo.png" /> <i><b>Rupesh Lights</b></i></a
       >
       <button
-        class="navbar-toggler"
+        class="navbar-toggler navbar-button"
         type="button"
         data-toggle="collapse"
         data-target="#Navbar"
+        aria-controls="#Navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <div class="animated">
+          <span></span><span></span><span></span><span></span>
+        </div>
       </button>
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav ml-auto">
@@ -79,14 +87,25 @@
               ><span class="fa fa-home"></span> Home</a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about"
-              ><span class="fa fa-info-circle"></span> About</a
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle" 
+              href="#" id="navbarDropdown" 
+              role="button" 
+              data-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false"
             >
+              <span class="fa fa-photo-video"></span> About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#images">Images</a>
+              <a class="dropdown-item" href="#videos">Videos</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact"
-              ><span class="fa fa-phone-square"></span> Contact</a
+              ><span class="fa fa-phone-square-alt"></span> Contact</a
             >
           </li>
         </ul>
@@ -103,18 +122,20 @@
             Arrange
           </p>
         </header>
-        <img data-aos="zoom-in" class="hero__image" src="img/logo.png" alt="" />
+        <img data-aos="zoom-in" class="hero__image" src="res/img/logo.png" alt="" />
       </div>
     </section>
 
     <!-- ABOUT/CARDS -->
     <div class="about" id="about">
       <h1 class="card_text"><b>About Us</b></h1>
+    <!-- Images -->
+      <h1 class="card_text" id="images"><b>Images</b></h1>
       <ul class="cards">
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/mumbai.jpeg" />
+              <img src="res/img/mumbai.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Mumbai</h2>
@@ -124,7 +145,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/goa.jpeg" />
+              <img src="res/img/goa.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Goa</h2>
@@ -134,7 +155,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/extra1.jpeg" />
+              <img src="res/img/extra1.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">ITC Maratha Andheri</h2>
@@ -144,7 +165,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/goa1.jpeg" />
+              <img src="res/img/goa1.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Goa</h2>
@@ -154,7 +175,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/y_b_chavan.jpeg" />
+              <img src="res/img/y_b_chavan.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Y B Chavan Auditorium</h2>
@@ -164,7 +185,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/kohinoor_elite.jpeg" />
+              <img src="res/img/kohinoor_elite.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Hotel Kohinoor Elite</h2>
@@ -174,7 +195,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/karjat_resort.jpeg" />
+              <img src="res/img/karjat_resort.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Karjat Resort Disco Nights</h2>
@@ -184,7 +205,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/rigis_hotel.jpeg" />
+              <img src="res/img/rigis_hotel.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">St Rigis Hotel</h2>
@@ -194,7 +215,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/itc_center_hotel.jpeg" />
+              <img src="res/img/itc_center_hotel.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">ITC Center Hotel Sangit Sandhya</h2>
@@ -204,7 +225,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/lights_truss.jpeg" />
+              <img src="res/img/lights_truss.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Lights & Truss</h2>
@@ -214,7 +235,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/blue_sea.jpeg" />
+              <img src="res/img/blue_sea.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Blue Sea Hotel</h2>
@@ -224,7 +245,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/ganpati_visarjan.jpeg" />
+              <img src="res/img/ganpati_visarjan.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Ganapati Visarjan</h2>
@@ -234,7 +255,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/yb_chavan1.jpeg" />
+              <img src="res/img/yb_chavan1.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Y B Chavan Auditorium</h2>
@@ -244,7 +265,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/worli.jpeg" />
+              <img src="res/img/worli.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">MNS Office Opening, Worli</h2>
@@ -254,7 +275,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/haldi.jpeg" />
+              <img src="res/img/haldi.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Haldi</h2>
@@ -264,7 +285,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/itc_center2.jpeg" />
+              <img src="res/img/itc_center2.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">ITC Center Hotel</h2>
@@ -274,7 +295,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/annual.jpeg" />
+              <img src="res/img/annual.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">SNDT College Annual Day, Mumbai</h2>
@@ -284,7 +305,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/mulund.jpeg" />
+              <img src="res/img/mulund.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Bhim Jayanti, Mulund</h2>
@@ -294,7 +315,7 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/st_rigis.jpeg" />
+              <img src="res/img/st_rigis.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">St. Rigis Hotel Disco Nights</h2>
@@ -304,16 +325,90 @@
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
-              <img src="img/canto.jpeg" />
+              <img src="res/img/canto.jpeg" />
             </div>
             <div class="card_content">
               <h2 class="card_title">Canto, Lower parel</h2>
             </div>
           </div>
         </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/goregaon_satsang.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Goregaon Satsang</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/taj_mahal.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Taj Mahal</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/ambience_lighting.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Ambience Lighting</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/ambience_lighting1.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Ambience Lighting</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/mumbai1.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Mumbai</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/mumbai2.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">Mumbai</h2>
+            </div>
+          </div>
+        </li>
       </ul>
+      <div class="text-center">
+        <button type="button" id="next" class="btn btn-secondary">Load More</button>
+      </div>
+      <!-- Videos -->
+      <h1 class="card_text" id="videos"><b>Videos</b></h1>
+      <div class="videos">
+        <div class="video-container">
+          <div class="video">
+            <video controls src="res/video/RL_Intro.mp4" type="video/mp4" />
+          </div>
+          <div class="video">
+            <video controls src="res/video/grand_hyatt.mp4" type="video/mp4" />
+          </div>
+        </div>
+      </div>
     </div>
-
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div  class="content">
@@ -346,46 +441,49 @@
           </div>
         </div>
       </div>
-      <div  class="btn-group" role="group">
-        <a role="button" class="btn btn-primary" href="tel: 9967202648">
-          <i class="fa fa-phone"></i> Call
-        </a>
-        <a
-          role="button"
-          class="btn btn-success"
-          href="https://wa.me/919967202648"
-        >
-          <i class="fa fa-whatsapp"></i> WhatsApp
-        </a>
-        <a
-          role="button"
-          class="btn btn-danger"
-          href="mailto: rupeshlights@gmail.com"
-        >
-          <i class="fa fa-envelope"></i> Gmail
-        </a>
-      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      <div class="footer_name">
-      <img class="footer_img" src="img/logo.png" /> <i><b>Rupesh Lights</b></i></a
-      >
+    <footer class="section bg-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="">
+                    <h5 class="footer-heading text-uppercase"><img class="footer_img" src="res/img/logo.png" /> <i><b>Rupesh Lights</b></i></h5>
+                    <ul class="list-unstyled footer-link mt-4">
+                          <li><a href="#home"><b>Home</b></a></li>
+                          <li><a href="#about"><b>About</b></a></li>
+                          <li><a href="#contact"><b>Contact</b></a></li>
+                      </ul>
+                      <div class="mt-4">
+                          <ul class="list-inline">
+                              <li class="list-inline-item"><a href="tel: 9967202648"><i class="fa phone footer-social-icon fa-phone-alt"></i></i></a></li>
+                              <li class="list-inline-item"><a href="https://www.instagram.com/rupesh_lights_official/"><i class="fab instagram footer-social-icon fa-instagram"></i></i></a></li>
+                              <li class="list-inline-item"><a href="https://wa.me/919967202648"><i class="fab whatsapp footer-social-icon fa-whatsapp"></i></i></a></li>
+                              <li class="list-inline-item"><a href="mailto: rupeshlights@gmail.com"><i class="fa gmail footer-social-icon fa-envelope"></i></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="footer_list">
-        <ul class="list-footer">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="text-center mt-4">
+          <p class="footer-alt mb-0 f-14">2021 &copy; Rupesh Lights, All Rights Reserved</p>
       </div>
-        <p class="copyrights">&copy; 2021 Rupesh Lights</p>
-    </footer>
+  </footer>
     <!-- jQuery, Popper.js, Bootstrap JS. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+      crossorigin="anonymous">
+    </script>
     <!-- NPROGRESS BAR -->
     <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
     <script>
@@ -400,8 +498,53 @@
     </script>
     <!-- ANIMATION -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>    
+    <script>
+      AOS.init();
+    </script>
+    <!-- Load More -->
+    <script>
+      $(document).ready(function(){
+
+      var list = $(".cards li");
+      var numToShow = 9;
+      var button = $("#next");
+      var numInList = list.length;
+      list.hide();
+      if (numInList > numToShow) {
+        button.show();
+      }
+      list.slice(0, numToShow).show();
+
+      button.click(function(){
+        var showing = list.filter(':visible').length;
+        list.slice(showing - 1, showing + numToShow).fadeIn();
+        var nowShowing = list.filter(':visible').length;
+        if (nowShowing >= numInList) {
+          button.hide();
+        }
+      });
+      });
+    </script>
+    <!-- NavBar -->
+    <script>
+      $(document).ready(function () {
+        $('.navbar-button').on('click', function () {
+          $('.animated').toggleClass('open');
+        });
+      });
+    </script>
+    <!-- Video -->
+    <script>
+      var video = document.querySelectorAll('video')
+      video.forEach(play => play.addEventListener('click', () => {
+        play.classList.toggle('active');
+        if(play.paused){
+          play.play();
+        } else {
+          play.pause();
+          play.currentTime = 0;
+        }
+      }));
+    </script>
   </body>
 </html>
