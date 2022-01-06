@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #a8a7a7;
+  background: #005076;
   border-radius: 50px;
 }
 
@@ -320,12 +320,17 @@ video {
   vertical-align: middle;
 }
 
+.wistia_embed {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .videos {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .video_item {
