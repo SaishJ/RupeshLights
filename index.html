@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="sr js" lang="en">
   <head>
     <!-- META CHARSET -->
     <meta charset="UTF-8" />
@@ -59,10 +59,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="res/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="res/img/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/styles.css" />
-    
+
   </head>
   <body class="body" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navbar -->
+    
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
       <a class="navbar-brand mr-auto" href="#"
         ><img src="res/img/logo.png" /> <i><b>Rupesh Lights</b></i></a
@@ -129,9 +130,31 @@
     <!-- ABOUT/CARDS -->
     <div class="about" id="about">
       <h1 class="card_text"><b>About Us</b></h1>
-    <!-- Images -->
+    
+      <!-- IMAGES -->
       <h1 class="card_text" id="images"><b>Images</b></h1>
       <ul class="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/itc.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">ITC Center</h2>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image">
+              <img src="res/img/itc2.jpeg" />
+            </div>
+            <div class="card_content">
+              <h2 class="card_title">ITC Center</h2>
+            </div>
+          </div>
+        </li>
+
         <li class="cards_item">
           <div class="card">
             <div class="card_image">
@@ -396,19 +419,34 @@
       <div class="text-center">
         <button type="button" id="next" class="btn btn-secondary">Load More</button>
       </div>
-      <!-- Videos -->
+
+      <!-- VIDEOS -->
       <h1 class="card_text" id="videos"><b>Videos</b></h1>
-      <div class="videos">
-        <div class="video-container">
+      <ul class="videos">
+        <li class="video_item">
           <div class="video">
-            <video controls src="res/video/RL_Intro.mp4" type="video/mp4" />
+            <div class="video_path">
+              <video controls src="res/video/RL_Intro.mp4" type="video/mp4" />
+            </div>
           </div>
+        </li>
+        <li class="video_item">
           <div class="video">
-            <video controls src="res/video/grand_hyatt.mp4" type="video/mp4" />
+            <div class="video_path">
+              <video controls src="res/video/grand_hyatt.mp4" type="video/mp4" />
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li class="video_item">
+          <div class="video">
+            <div class="video_path">
+              <video controls src="res/video/canto.mp4" type="video/mp4" />
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div  class="content">
@@ -471,6 +509,7 @@
           <p class="footer-alt mb-0 f-14">2021 &copy; Rupesh Lights, All Rights Reserved</p>
       </div>
   </footer>
+
     <!-- jQuery, Popper.js, Bootstrap JS. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -484,6 +523,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
       crossorigin="anonymous">
     </script>
+
     <!-- NPROGRESS BAR -->
     <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
     <script>
@@ -496,12 +536,14 @@
       NProgress.configure({ parent: ".body" });
       NProgress.done()
     </script>
+
     <!-- ANIMATION -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <!-- Load More -->
+
+    <!-- LOAD MORE BUTTON -->
     <script>
       $(document).ready(function(){
 
@@ -525,26 +567,14 @@
       });
       });
     </script>
-    <!-- NavBar -->
+
+    <!-- Hamburger -->
     <script>
       $(document).ready(function () {
         $('.navbar-button').on('click', function () {
           $('.animated').toggleClass('open');
         });
       });
-    </script>
-    <!-- Video -->
-    <script>
-      var video = document.querySelectorAll('video')
-      video.forEach(play => play.addEventListener('click', () => {
-        play.classList.toggle('active');
-        if(play.paused){
-          play.play();
-        } else {
-          play.pause();
-          play.currentTime = 0;
-        }
-      }));
     </script>
   </body>
 </html>
