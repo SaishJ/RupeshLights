@@ -313,58 +313,11 @@ img {
   }
 }
 
-/* Videos */
-video {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.wistia_embed {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-}
-
-.video_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .video_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .video_item {
-    width: 33.3333%;
-  }
-}
-
-.video {
-  background-color: #f8f9fa;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
 /* Footer */
 .footer_img {
   height: 45px;
   width: 45px;
 }
-
 .bg-footer {
   background-color: #f8f9fa;
   padding: 40px 0 20px;
@@ -373,7 +326,6 @@ video {
   color: #005076;
   letter-spacing: 2px;
 }
-
 .footer-link a {
   color: #005076;
   line-height: 40px;
@@ -389,22 +341,18 @@ video {
   text-align: center;
   display: inline-block;
 }
-
 .phone {
   background-color: #1266f1;
   color: #ffffff;
 }
-
 .instagram {
   background-color: #e91e63;
   color: #ffffff;
 }
-
 .whatsapp {
   background-color: #00b74a;
   color: #ffffff;
 }
-
 .gmail {
   background-color: #f93154;
   color: #ffffff;
@@ -413,7 +361,6 @@ video {
   position: relative;
   padding-bottom: 14px;
 }
-
 .footer-heading:after {
   content: "";
   width: 45px;
@@ -423,14 +370,6 @@ video {
   bottom: 0;
   display: block;
   border-bottom: 2px solid #036999;
-}
-
-.list-inline-item {
-  transition: transform 0.3s ease-out;
-}
-
-.list-inline-item:hover {
-  transform: translateY(-8px);
 }
 
 /* nprogress */
