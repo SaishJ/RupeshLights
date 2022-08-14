@@ -263,6 +263,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 .contact .content h2 {
   font-family: "Quicksand", serif;
@@ -319,8 +320,8 @@ img {
   width: 45px;
 }
 .bg-footer {
-  background-color: #f8f9fa;
   padding: 40px 0 20px;
+  border-top: 1px solid #020202;
 }
 .footer-heading {
   color: #005076;
